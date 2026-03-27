@@ -61,16 +61,23 @@ FC(10)
 ## 📊 Training Results
 
 ### Training Log
-Epoch [1/10] Train Loss: 1.5022 | Test Loss: 1.1901 | Test Acc: 57.56%
-Epoch [2/10] Train Loss: 1.0947 | Test Loss: 1.0629 | Test Acc: 62.96%
-Epoch [3/10] Train Loss: 0.9050 | Test Loss: 0.8750 | Test Acc: 69.44%
-Epoch [4/10] Train Loss: 0.7716 | Test Loss: 0.9236 | Test Acc: 67.89%
-Epoch [5/10] Train Loss: 0.6762 | Test Loss: 0.8227 | Test Acc: 71.55%
-Epoch [6/10] Train Loss: 0.5813 | Test Loss: 0.7836 | Test Acc: 74.34%
-Epoch [7/10] Train Loss: 0.5088 | Test Loss: 0.8326 | Test Acc: 72.59%
-Epoch [8/10] Train Loss: 0.4360 | Test Loss: 0.8158 | Test Acc: 73.66%
-Epoch [9/10] Train Loss: 0.3700 | Test Loss: 0.8451 | Test Acc: 74.68%
-Epoch [10/10] Train Loss: 0.3097 | Test Loss: 0.8841 | Test Acc: 74.19%
+Epoch [1/10] Train Loss: 1.5141 | Test Loss: 1.1982 | Test Acc: 56.93%
+Best model saved.
+Epoch [2/10] Train Loss: 1.1172 | Test Loss: 1.0207 | Test Acc: 64.26%
+Best model saved.
+Epoch [3/10] Train Loss: 0.9319 | Test Loss: 0.9259 | Test Acc: 67.86%
+Best model saved.
+Epoch [4/10] Train Loss: 0.8061 | Test Loss: 0.9251 | Test Acc: 67.64%
+Epoch [5/10] Train Loss: 0.7105 | Test Loss: 0.7977 | Test Acc: 72.51%
+Best model saved.
+Epoch [6/10] Train Loss: 0.6292 | Test Loss: 0.7821 | Test Acc: 72.82%
+Best model saved.
+Epoch [7/10] Train Loss: 0.5499 | Test Loss: 0.7584 | Test Acc: 73.88%
+Best model saved.
+Epoch [8/10] Train Loss: 0.4882 | Test Loss: 0.8296 | Test Acc: 73.14%
+Epoch [9/10] Train Loss: 0.4222 | Test Loss: 0.8213 | Test Acc: 74.27%
+Best model saved.
+Epoch [10/10] Train Loss: 0.3645 | Test Loss: 0.8401 | Test Acc: 74.13%
 
 
 ---
