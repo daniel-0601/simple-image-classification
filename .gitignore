@@ -1,0 +1,16 @@
+# python
+__pycache__/
+*.pyc
+
+# virtual environment
+venv/
+
+# dataset
+dataset/
+
+# model weights
+*.pth
+
+# OS
+.DS_Store
+Thumbs.db
