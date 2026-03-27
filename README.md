@@ -98,7 +98,7 @@ Epoch [10/10] Train Loss: 0.3645 | Test Loss: 0.8401 | Test Acc: 74.13%
 
 ## 📈 Final Performance
 
-- **Best Test Accuracy:** 74.68%  
+- **Best Test Accuracy:** 74.27%  
 - Model saved at: `outputs/best_model.pth`  
 
 ---
