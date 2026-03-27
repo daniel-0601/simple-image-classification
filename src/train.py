@@ -3,9 +3,14 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
+import matplotlib.pyplot as plt
 
-from model import SimpleCNN
-from utils import get_device, CLASSES
+from src.model import SimpleCNN
+from src.utils import get_device, CLASSES
+
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 def evaluate(model, dataloader, criterion, device):
@@ -36,6 +41,7 @@ def evaluate(model, dataloader, criterion, device):
 def train():
     device = get_device()
     print(f"Using device: {device}")
+    os.makedirs("outputs", exist_ok=True)
 
     transform = transforms.Compose([
         transforms.ToTensor()
@@ -65,6 +71,9 @@ def train():
 
     num_epochs = 10
     best_acc = 0.0
+    train_losses = []
+    test_losses = []
+    test_accuracies = []
 
     for epoch in range(num_epochs):
         model.train()
@@ -84,6 +93,9 @@ def train():
 
         train_loss = running_loss / len(train_loader)
         test_loss, test_acc = evaluate(model, test_loader, criterion, device)
+        train_losses.append(train_loss)
+        test_losses.append(test_loss)
+        test_accuracies.append(test_acc)
 
         print(
             f"Epoch [{epoch+1}/{num_epochs}] "
@@ -94,8 +106,23 @@ def train():
 
         if test_acc > best_acc:
             best_acc = test_acc
-            torch.save(model.state_dict(), "best_model.pth")
+            torch.save(model.state_dict(), "outputs/best_model.pth")
             print("Best model saved.")
+    
+    # Loss curve
+    plt.figure()
+    plt.plot(train_losses, label='Train Loss')
+    plt.plot(test_losses, label='Test Loss')
+    plt.legend()
+    plt.title("Loss Curve")
+    plt.savefig("outputs/loss_curve.png")
+
+    # Accuracy curve
+    plt.figure()
+    plt.plot(test_accuracies, label='Test Accuracy')
+    plt.legend()
+    plt.title("Accuracy Curve")
+    plt.savefig("outputs/accuracy_curve.png")
 
     print(f"Training finished. Best Test Accuracy: {best_acc:.2f}%")
 
