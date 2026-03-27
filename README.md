@@ -116,7 +116,7 @@ Epoch [10/10] Train Loss: 0.3645 | Test Loss: 0.8401 | Test Acc: 74.13%
 
 ### 2️⃣ Overfitting
 
-After epoch 6:
+After epoch 7:
 
 - Train loss continues decreasing  
 - Test loss starts fluctuating  
