@@ -111,6 +111,8 @@ Epoch [10/10] Train Loss: 0.3645 | Test Loss: 0.8401 | Test Acc: 74.13%
 - Test accuracy peaks around epoch 6–9  
 
 👉 The model successfully learns meaningful features.
+<img width="640" height="480" alt="loss_curve" src="https://github.com/user-attachments/assets/c2275584-ddb8-43cb-afd5-bf288924a076" />
+
 
 ---
 
