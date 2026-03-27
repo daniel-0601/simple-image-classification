@@ -62,21 +62,23 @@ FC(10)
 
 ### Training Log
 Epoch [1/10] Train Loss: 1.5141 | Test Loss: 1.1982 | Test Acc: 56.93%
-Best model saved.
+
 Epoch [2/10] Train Loss: 1.1172 | Test Loss: 1.0207 | Test Acc: 64.26%
-Best model saved.
+
 Epoch [3/10] Train Loss: 0.9319 | Test Loss: 0.9259 | Test Acc: 67.86%
-Best model saved.
+
 Epoch [4/10] Train Loss: 0.8061 | Test Loss: 0.9251 | Test Acc: 67.64%
+
 Epoch [5/10] Train Loss: 0.7105 | Test Loss: 0.7977 | Test Acc: 72.51%
-Best model saved.
+
 Epoch [6/10] Train Loss: 0.6292 | Test Loss: 0.7821 | Test Acc: 72.82%
-Best model saved.
+
 Epoch [7/10] Train Loss: 0.5499 | Test Loss: 0.7584 | Test Acc: 73.88%
-Best model saved.
+
 Epoch [8/10] Train Loss: 0.4882 | Test Loss: 0.8296 | Test Acc: 73.14%
+
 Epoch [9/10] Train Loss: 0.4222 | Test Loss: 0.8213 | Test Acc: 74.27%
-Best model saved.
+
 Epoch [10/10] Train Loss: 0.3645 | Test Loss: 0.8401 | Test Acc: 74.13%
 
 
