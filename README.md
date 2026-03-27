@@ -25,17 +25,29 @@ The model is a simple CNN used as a baseline for further improvements.
 
 ### Architecture
 Input (3×32×32)
+
 ↓
+
 Conv(32) → ReLU → MaxPool
+
 ↓
+
 Conv(64) → ReLU → MaxPool
+
 ↓
+
 Conv(128) → ReLU → MaxPool
+
 ↓
+
 Flatten
+
 ↓
+
 FC(256) → ReLU
+
 ↓
+
 FC(10)
 
 ### Design Concept
